@@ -15,8 +15,6 @@
             </h1>
         </header>
 
-        <nav></nav>
-
         <h2>Pregled filmova - histogram</h2>
 
 
@@ -30,27 +28,36 @@
     <div><span class="color-box" style="background:orange"></span>Sci-Fi (30%)</div>
 </div>
 
-
-
         <form>
-            <label for="fname">Ime: </label> 
-            <input type="text" id="fname" name="fname"> 
-            <label for="fname">Prezime: </label>
-            <input type="text" id="lname" name="lname">
+            <fieldset>
+                <legend>Osobni podaci:</legend>
+                <label for="fname">Ime: </label> 
+                <input type="text" id="fname" name="fname"> 
+                <label for="fname">Prezime: </label>
+                <input type="text" id="lname" name="lname">
+            </fieldset>
         </form>
 
         <form>
-            <label for="cars">Odaberi žanr</label>
-            <select name="cars" id="cars">
-            <option>--Odaberi--</option>
-            <option>Horor</option>
-            <option>Komedija</option>
-            <option>Drama</option>
-            <option>Triler</option>
-        </select>
-        <br><br>
-  <input type="submit" value="Submit">
-</form>
+            <fieldset>
+                <legend>Odaberi žanr:</legend>
+                <select name="cars" id="cars">
+                <option>--Odaberi--</option>
+                <option>Horor</option>
+                <option>Komedija</option>
+                <option>Drama</option>
+                <option>Triler</option>
+                <option>Romantični</option>
+                <option>Sci-Fi</option>
+                </select>
+                <br><br>
+                <input type="submit" value="Submit">
+            </fieldset>
+        </form>
 
+        
+        <footer>
+            <p>© 2025. Web Programiranje. Sva prava pridrzana.</p>
+        </footer>
     </body>
 </html>
