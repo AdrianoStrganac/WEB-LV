@@ -7,20 +7,24 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="index_S.css">
     </head>
-    <body id="mainBody">
+    <body>
       <div id="div1">
-    <header>
-        <h1>Moja web stranica o filmovima</h1>
-    </header>
+        <header>
+            <h1>Moja web stranica o filmovima</h1>
+        </header>
 
-        <nav id="Menu">Menu
-            <ul>
-            <li><a href="index.html">Početna</a></li>
-            <li><a href="grafikon.html">Grafikoni</a></li>
-            <li><a href="galerija.html">Galerija</a></li>
+        <nav class="Menu">
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle">Menu</label>
+            <ul class="SubMenu">
+            <li><a href="Pages/index.html">Početna</a></li>
+            <li><a href="Pages/grafikon.html">Grafikoni</a></li>
+            <li><a href="Pages/slike.html">Galerija</a></li>
             </ul>
         </nav>
-
+      </div>
+      <div id="div2">
+        <div id="div3">
         <h1>Filmovi</h1>
         <table>
             <tr>
@@ -132,15 +136,18 @@
             <p>Ovdje se nalazi clanak s vaznim informacijama.</p>
         </article>
 
-        <footer>
-            <p>© 2025. Web Programiranje. Sva prava pridrzana.</p>
-        </footer>
+      </div>
+      <div id="div4">
+            <img src="Content/slika.jpg" alt="Jaws movie poster" id="jaws">
+            <img src="Content/slika1.jpg" alt="Grown ups 1 movie poster" id="grownUps">
+      </div>
       </div>
 
-      <aside>
-      <div id="div2">
-            <img src="slika.jpg" alt="Jaws movie poster" id="jaws">
-            <img src="slika1.jpg" alt="Grown ups 1 movie poster" id="grownUps">
-      </div>
+          <footer>
+            <p>© 2025. Web Programiranje. Sva prava pridrzana.</p>
+        </footer>
+
     </body>
+
+
 </html>

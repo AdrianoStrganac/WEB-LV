@@ -1,36 +1,123 @@
-header{
-    width: max-content;
-    background-color: salmon;
-    padding: 8px;
-    order: 1;
-    
-}
-#mainBody{
+body {
+    font-family: 'Abel', sans-serif;
     display: flex;
-    flex-direction: row;
-}
+    flex-direction: column;
+    width: 100%;
+}   
 
 #div1{
     flex-direction: column;
 }
 
 #div2{
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
-header{
-    align-items: flex-start;
+
+#div3{
+    order: 1;
+    flex: 1;
+}
+
+#div4{
+    order: 2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
 }
 
 #jaws{
 
-    width: 400px;
-    height: 500px;
-    order: 1;
+    width: 60%;
+    height: 80%;
+    padding: 20px;
 }
 
 #grownUps{
 
-    width: 400px;
-    height: 500px;
-    order: 2;
+    width: 60%;
+    height: 80%;
+    padding: 20px;}
+
+header{
+  background-color: #e88235;
+  padding: 20px;
+  text-align: start;
+}
+table{
+    width: 100%;
+    height: 50%;
+    border-collapse: collapse;
+    border: 3px solid #4b4b4b;
+}
+tr, td{
+    border: 3px solid #4b4b4b;
+    padding: 10px;
+    text-align: center;
+}
+
+.Menu {
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.Menu label {
+    display: block;
+    padding: 20px;
+    background: #37f;
+    color: white;
+    cursor: pointer;
+    text-align: start;
+    transition: .4s;
+}
+
+.Menu label:hover {
+    background: #35c;
+}
+
+.SubMenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 200px;
+    background: #37f;
+    border: 5px solid white;
+    box-shadow: 1px 1px 1px grey;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+#menu-toggle:checked ~ .SubMenu {
+    display: block;
+}
+
+.SubMenu li {
+    list-style-type: none;
+    padding: 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.SubMenu li:hover {
+    background: #35c;
+}
+
+.SubMenu li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+footer
+{
+    background-color: #e88235;
+    padding: 10px;
+    text-align: center; 
 }
