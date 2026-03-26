@@ -1,0 +1,36 @@
+header{
+    width: max-content;
+    background-color: salmon;
+    padding: 8px;
+    order: 1;
+    
+}
+#mainBody{
+    display: flex;
+    flex-direction: row;
+}
+
+#div1{
+    flex-direction: column;
+}
+
+#div2{
+    flex-direction: column;
+}
+header{
+    align-items: flex-start;
+}
+
+#jaws{
+
+    width: 400px;
+    height: 500px;
+    order: 1;
+}
+
+#grownUps{
+
+    width: 400px;
+    height: 500px;
+    order: 2;
+}
